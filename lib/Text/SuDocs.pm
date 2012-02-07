@@ -1,6 +1,6 @@
 package Text::SuDocs;
 {
-  $Text::SuDocs::VERSION = '0.013';
+  $Text::SuDocs::VERSION = '0.014';
 }
 
 # ABSTRACT: parse and normalize SuDocs numbers
@@ -55,7 +55,7 @@ sub parse {
     return if ! defined $original;
 
     chomp($original);
-    croak 'Invalid characters' if $original =~ qr{[^\p{IsAlnum}\s:/\-.<>]};
+    croak 'Invalid characters' if $original =~ qr{[^\p{IsAlnum}\s:/\-.<>()]};
     $original = uc $original;
     $original =~ s{^\s+|\s+$}{}g;
     $original =~ s{\s+}{ }g;

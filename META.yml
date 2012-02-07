@@ -22,4 +22,4 @@ requires:
   Carp: 0
   namespace::autoclean: 0
   perl: 5.10.0
-version: 0.013
+version: 0.014

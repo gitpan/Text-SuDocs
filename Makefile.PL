@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     "Carp" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.013",
+  "VERSION" => "0.014",
   "test" => {
     "TESTS" => "t/*.t"
   }
